@@ -1,6 +1,7 @@
 :root {
   --bgcolor: #f8f8ff;
   --txtcolor: #333333;
+  --offcolor: #e0e0e0;
   --hsize: 3em;
   --tsize: 1em;
   font-size: 16px;
@@ -13,4 +14,103 @@
   box-sizing: border-box;
   background: var(--bgcolor);
   color: var(--txtcolor);
+}
+body {
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: var(--bgcolor);
+  color: var(--txtcolor);
+  font-family: var(--font);
+  width: calc(100vw-10px);
+  height: 100svh;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 92px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: inherit;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  font-family: var(--font);
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+  background-color: var(--bgcolor);
+  min-width: 88px;
+  border: 2px solid var(--offcolor);
+  border-radius: 14%;
+}
+a.navlink,
+a.navlink:visited,
+a.navlink:active {
+  all: unset;
+  /* OR for more control */
+  color: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.hero-figure {
+  position: relative;
+  display: flex; /* change inline-block to flex */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+#hero-img {
+  display: block;
+  width: 80%; /* or desired width */
+  border-radius: 15px;
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 50%;
+  right: 20%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background-color: rgba(0, 123, 255, 0.8);
+  font-family: var(--font);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline-block; /* Ensure it's box-like */
+}
+#cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+#catimg {
+  height: 80%;
 }
