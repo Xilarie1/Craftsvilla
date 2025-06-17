@@ -1,4 +1,9 @@
 :root {
+  --bgcolor: #f8f8ff;
+  --txtcolor: #333333;
+  --hsize: 3em;
+  --tsize: 1em;
+  font-size: 16px;
 }
 * {
   margin: 0;
