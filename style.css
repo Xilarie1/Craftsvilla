@@ -11,4 +11,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: var(--bgcolor);
+  color: var(--txtcolor);
 }
