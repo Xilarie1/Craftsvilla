@@ -4,6 +4,8 @@
   --hsize: 3em;
   --tsize: 1em;
   font-size: 16px;
+  --font: "Quicksand", sans-serif;
+  --hfont: "Fredoka", sans-serif;
 }
 * {
   margin: 0;
