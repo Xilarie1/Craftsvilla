@@ -24,6 +24,33 @@
       </ul>
     </nav>
   </header>
-  <main></main>
+  <main>
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Art</a>
+        <a href="#">Music</a>
+        <a href="#">Fashion</a>
+      </div>
+    </div>
+    <form action="/submit" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <select name="Workshop attended" placeholder="Workshop attended">
+        <option value="spraypaiting">spraypaiting</option>
+        <option value="akvarell">akvarell</option>
+        <option value="lerret">lerret</option>
+        <option value="mosaikk">mosaikk</option>
+      </select>
+      <textarea name="message" placeholder="Your message"></textarea>
+      <textarea name="message" placeholder="Your message"></textarea>
+      <select name="Would you reccomend Craftsvilla?">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+        <option value="maybe">maybe</option>
+      </select>
+      <button type="submit">Send</button>
+    </form>
+  </main>
   <footer></footer>
 </html>
