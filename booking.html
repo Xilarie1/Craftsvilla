@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
   <head>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
@@ -25,9 +25,42 @@
     </nav>
   </header>
   <main>
-    <figure id="cat">
-      <img src="./Img/404.jpg" alt="" id="catimg" />
-    </figure>
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Art</a>
+        <a href="#">Music</a>
+        <a href="#">Fashion</a>
+      </div>
+    </div>
+    <form action="/submit" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone number" placeholder="+47 467 45 455" />
+      <select name="country">
+        <option value="us">USA</option>
+        <option value="ca">Canada</option>
+      </select>
+      <input type="datetime-local" name="appointment" id="appointment" />
+      <select name="country">
+        <option value="us">USA</option>
+        <option value="ca">Canada</option>
+      </select>
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </main>
   <footer></footer>
 </html>
+<!-- Fake submit
+<form>
+  <input type="text" placeholder="Your name" required />
+  <label for="submit-check" class="fake-submit-button">Submit</label>
+
+  <input type="checkbox" id="submit-check" hidden />
+  <div class="confirmation-message">
+    Thanks for submitting! 🎉
+  </div>
+</form>
+
+-->
