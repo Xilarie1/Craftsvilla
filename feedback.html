@@ -10,47 +10,67 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Feedback – Craftsvilla</title>
   </head>
-  <body></body>
-  <header>
-    <nav>
-      <h1>Craftsvilla</h1>
-      <ul>
-        <li><a href="index.html" class="navlink">Home</a></li>
-        <li><a href="booking.html" class="navlink">Booking</a></li>
-        <li><a href="gallery.html" class="navlink">Gallery</a></li>
-        <li><a href="feedback.html" class="navlink">Feedback</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="dropdown">
-      <button class="dropbtn">Menu ▼</button>
-      <div class="dropdown-content">
-        <a href="#">Art</a>
-        <a href="#">Music</a>
-        <a href="#">Fashion</a>
-      </div>
-    </div>
-    <form action="/submit" method="POST">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <select name="Workshop attended" placeholder="Workshop attended">
-        <option value="spraypaiting">spraypaiting</option>
-        <option value="akvarell">akvarell</option>
-        <option value="lerret">lerret</option>
-        <option value="mosaikk">mosaikk</option>
-      </select>
-      <textarea name="message" placeholder="Your message"></textarea>
-      <textarea name="message" placeholder="Your message"></textarea>
-      <select name="Would you reccomend Craftsvilla?">
-        <option value="yes">yes</option>
-        <option value="no">no</option>
-        <option value="maybe">maybe</option>
-      </select>
-      <button type="submit">Send</button>
-    </form>
-  </main>
-  <footer></footer>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Craftsvilla</h1>
+        <ul>
+          <li><a href="index.html" class="navlink">Home</a></li>
+          <li><a href="booking.html" class="navlink">Booking</a></li>
+          <li><a href="gallery.html" class="navlink">Gallery</a></li>
+          <li><a href="feedback.html" class="navlink">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <figure class="hero-figure">
+        <img
+          id="hero-img"
+          src="./Img/karollyne-videira-hubert-3.jpg"
+          alt="Feedback Background"
+        />
+      </figure>
+
+      <form class="booking-form" action="/submit" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Email" required />
+
+        <select name="Workshop attended" required>
+          <option value="" disabled selected hidden>Workshop attended</option>
+          <option value="spraypaiting">Spraypaiting</option>
+          <option value="akvarell">Akvarell</option>
+          <option value="lerret">Lerret</option>
+          <option value="mosaikk">Mosaikk</option>
+        </select>
+
+        <textarea
+          name="message"
+          placeholder="What did you enjoy?"
+          required
+        ></textarea>
+
+        <textarea
+          name="improvements"
+          placeholder="What could be better?"
+        ></textarea>
+
+        <select name="recommend" required>
+          <option value="" disabled selected hidden>
+            Would you recommend Craftsvilla?
+          </option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <option value="maybe">Maybe</option>
+        </select>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>

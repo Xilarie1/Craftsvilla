@@ -33,21 +33,16 @@
         <a href="#">Fashion</a>
       </div>
     </div>
-    <form action="/submit" method="POST">
+    <form class="booking-form" action="/submit" method="POST">
       <input type="text" name="name" placeholder="Your name" required />
       <input type="email" name="email" placeholder="Email" required />
-      <input type="tel" name="phone number" placeholder="+47 467 45 455" />
-      <select name="country">
-        <option value="us">USA</option>
-        <option value="ca">Canada</option>
-      </select>
-      <input type="datetime-local" name="appointment" id="appointment" />
-      <select name="country">
-        <option value="us">USA</option>
-        <option value="ca">Canada</option>
-      </select>
-      <textarea name="message" placeholder="Your message"></textarea>
-      <button type="submit">Send</button>
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <input type="datetime-local" name="appointment" />
+      <textarea
+        name="message"
+        placeholder="What would you like to book?"
+      ></textarea>
+      <button type="submit">Book Now</button>
     </form>
   </main>
   <footer></footer>
