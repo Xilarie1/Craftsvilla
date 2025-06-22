@@ -70,7 +70,6 @@ a.navlink,
 a.navlink:visited,
 a.navlink:active {
   all: unset;
-  /* OR for more control */
   color: inherit;
   font: inherit;
   text-decoration: inherit;
@@ -78,14 +77,14 @@ a.navlink:active {
 }
 .hero-figure {
   position: relative;
-  display: flex; /* change inline-block to flex */
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
 }
 #hero-img {
   display: block;
-  width: 80%; /* or desired width */
+  width: 80%;
   border-radius: 15px;
 }
 
@@ -103,7 +102,7 @@ a.navlink:active {
   border-radius: 6px;
   font-size: 2rem;
   cursor: pointer;
-  display: inline-block; /* Ensure it's box-like */
+  display: inline-block;
 }
 #cat {
   display: flex;
@@ -153,27 +152,6 @@ a.navlink:active {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-/* fake submit css
-.confirmation-message {
-  display: none;
-  color: green;
-  margin-top: 10px;
-}
-
-#submit-check:checked ~ .confirmation-message {
-  display: block;
-}
-
-.fake-submit-button {
-  display: inline-block;
-  padding: 8px 16px;
-  background: blue;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-  user-select: none;
-}
-*/
 .booking-form {
   display: flex;
   flex-direction: column;
