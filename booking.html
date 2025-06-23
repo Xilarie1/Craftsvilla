@@ -25,25 +25,84 @@
     </nav>
   </header>
   <main>
-    <div class="dropdown">
+    <!-- <div class="dropdown">
       <button class="dropbtn">Menu ▼</button>
       <div class="dropdown-content">
         <a href="#">Art</a>
         <a href="#">Music</a>
         <a href="#">Fashion</a>
-      </div>
-    </div>
-    <form class="booking-form" action="/submit" method="POST">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="tel" name="phone" placeholder="Phone Number" />
-      <input type="datetime-local" name="appointment" />
-      <textarea
-        name="message"
-        placeholder="What would you like to book?"
-      ></textarea>
-      <button type="submit">Book Now</button>
-    </form>
+      </div> 
+    </div> -->
+    <section id="product-card">
+      <article class="product-card">
+        <img src="./Img/george-pagan.jpg" alt="Product Name" />
+        <div class="product-info">
+          <p class="product-price">750 NOK</p>
+          <p class="product">Spray painting</p>
+          <p class="product-name">
+            Set includes: Frame, 3 different color spraypaint boxes
+          </p>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="./Img/sixteen-miles-out.jpg" alt="Product Name" />
+        <div class="product-info">
+          <p class="product-price">200 NOK</p>
+          <p class="product">Water color</p>
+          <p class="product-name">
+            Set includes: Frame, watercolor paper with design template,
+            watercolor paints, brushes.
+          </p>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="./Img/guillaume-didelet.jpg" alt="Product Name" />
+        <div class="product-info">
+          <p class="product-price">300 NOK</p>
+          <p class="product">Canvas painting</p>
+          <p class="product-name">
+            Set includes: Frame, acrylic paper with design template, acrylic
+            paints, brushes.
+          </p>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="./Img/faraz-arshad.jpg" alt="Product Name" />
+        <div class="product-info">
+          <p class="product-price">400 NOK</p>
+          <p class="product">Mosaic</p>
+          <p class="product-name">
+            Set includes: Frame, A4 size wooden board, small colored stones,
+            rubber.
+          </p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <form class="booking-form" action="/submit" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number" />
+        <select name="Workshop" required>
+          <option value="" disabled selected hidden>Workshop</option>
+          <option value="spraypaiting">Spraypaiting 750nok</option>
+          <option value="akvarell">Akvarell 200nok</option>
+          <option value="lerret">Lerret 300nok</option>
+          <option value="mosaikk">Mosaikk 400nok</option>
+        </select>
+        <input type="datetime-local" name="appointment" />
+        <select name="people" required>
+          <option value="" disabled selected hidden>How many people?</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <textarea name="message" placeholder="Any special requests?"></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
   </main>
   <footer></footer>
 </html>

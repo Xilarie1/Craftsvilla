@@ -34,11 +34,9 @@
           alt="Feedback Background"
         />
       </figure>
-
       <form class="booking-form" action="/submit" method="POST">
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Email" required />
-
         <select name="Workshop attended" required>
           <option value="" disabled selected hidden>Workshop attended</option>
           <option value="spraypaiting">Spraypaiting</option>
@@ -46,18 +44,15 @@
           <option value="lerret">Lerret</option>
           <option value="mosaikk">Mosaikk</option>
         </select>
-
         <textarea
           name="message"
           placeholder="What did you enjoy?"
           required
         ></textarea>
-
         <textarea
           name="improvements"
           placeholder="What could be better?"
         ></textarea>
-
         <select name="recommend" required>
           <option value="" disabled selected hidden>
             Would you recommend Craftsvilla?
@@ -66,11 +61,9 @@
           <option value="no">No</option>
           <option value="maybe">Maybe</option>
         </select>
-
         <button type="submit">Send Feedback</button>
       </form>
     </main>
-
     <footer></footer>
   </body>
 </html>
